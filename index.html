@@ -63,73 +63,49 @@
         </div>
     </section>
 
-    <section id="products" class="container mx-auto px-4 py-20">
-        <div class="text-center max-w-xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3">Our Medicines & Products</h2>
-            <p class="text-gray-500 font-medium">Apni matlooba medicine dhoondein aur order karne ke liye WhatsApp karein.</p>
-            <div class="w-20 h-1.5 bg-gradient-to-r from-teal-600 to-emerald-500 mx-auto mt-4 rounded-full"></div>
-        </div>
+   <section id="products" class="container mx-auto px-4 py-10">
+    
+    <div class="text-center max-w-xl mx-auto mb-8">
+        <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3">Our Medicines & Products</h2>
+        <p class="text-gray-500 font-medium">Apni matlooba medicine dhoondein aur order karne ke liye WhatsApp karein.</p>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-teal-600 to-emerald-500 mx-auto mt-4 rounded-full"></div>
+    </div>
 
-        <div class="max-w-md mx-auto mb-10 sticky top-20 z-40">
-            <div class="relative shadow-md rounded-2xl">
-                <input type="text" id="medicineSearch" onkeyup="searchMedicine()" placeholder="Dawa ka naam dhoondein (e.g. Panadol, Risek)..." class="w-full px-5 py-4 pl-12 pr-4 text-gray-700 bg-white border-2 border-teal-100 rounded-2xl focus:outline-none focus:border-teal-600 font-medium transition-all shadow-inner">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-teal-600">
-                    <i class="fas fa-search text-lg"></i>
-                </div>
+    <div class="max-w-md mx-auto mb-8 sticky top-5 z-50">
+        <div class="relative shadow-lg rounded-2xl">
+            <input type="text" id="medicineSearch" onkeyup="searchMedicine()" placeholder="Dawa ka naam dhoondein..." class="w-full px-5 py-4 pl-12 pr-4 text-gray-700 bg-white border-2 border-teal-100 rounded-2xl focus:outline-none focus:border-teal-600 font-medium transition-all">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-teal-600">
+                <i class="fas fa-search text-lg"></i>
             </div>
         </div>
-<div class="container mx-auto px-4 py-6">
-    <div class="swiper main-slider rounded-3xl shadow-xl border border-teal-100 overflow-hidden">
+    </div>
+
+    <div class="swiper main-slider w-full h-[200px] md:h-[400px] rounded-2xl shadow-xl overflow-hidden mb-10">
         <div class="swiper-wrapper">
             <div class="swiper-slide relative">
-                <img src="banner1.jpg" alt="Zubair Pharmacy" class="w-full h-[300px] md:h-[450px] object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-                    <h2 class="text-3xl font-black">Asli Adwiyaat</h2>
-                    <p class="text-lg">Trust & Care on every step.</p>
-                </div>
+                <img src="banner1.jpg" class="w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative">
-                <img src="banner2.jpg" alt="Discount Offer" class="w-full h-[300px] md:h-[450px] object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-                    <h2 class="text-3xl font-black">Home Delivery</h2>
-                    <p class="text-lg">Kahna Kacha Road, Lahore.</p>
-                </div>
+                <img src="banner2.jpg" class="w-full h-full object-cover">
             </div>
             <div class="swiper-slide relative">
-                <img src="banner3.jpg" alt="New Arrivals" class="w-full h-[300px] md:h-[450px] object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-                    <h2 class="text-3xl font-black">Certified Pharmacy</h2>
-                    <p class="text-lg">Your health is our priority.</p>
-                </div>
+                <img src="banner3.jpg" class="w-full h-full object-cover">
             </div>
         </div>
-        <div class="swiper-button-next !text-white !font-bold"></div>
-        <div class="swiper-button-prev !text-white !font-bold"></div>
         <div class="swiper-pagination"></div>
     </div>
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.main-slider', {
         loop: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        effect: 'fade', // Smooth fading effect
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        effect: 'fade',
         fadeEffect: { crossFade: true }
     });
 </script>
-
    <div id="medicineGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
             
             <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/maxdifserum.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF SERUM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
