@@ -69,6 +69,15 @@
         <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-3">Our Medicines & Products</h2>
         <p class="text-gray-500 font-medium">Apni matlooba medicine dhoondein aur order karne ke liye WhatsApp karein.</p>
         <div class="w-20 h-1.5 bg-gradient-to-r from-teal-600 to-emerald-500 mx-auto mt-4 rounded-full"></div>
+<div class="flex flex-wrap justify-center gap-2 mb-8 px-2">
+    <div class="flex flex-wrap justify-center gap-2 mb-8 px-2 w-full">
+    <button onclick="filterSelection('all', this)" class="filter-btn px-4 py-2 bg-teal-600 text-white rounded-lg font-bold">All</button>
+    <button onclick="filterSelection('tablet', this)" class="filter-btn px-4 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold">Tablets</button>
+    <button onclick="filterSelection('syrup', this)" class="filter-btn px-4 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold">Syrups</button>
+    <button onclick="filterSelection('cream', this)" class="filter-btn px-4 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold">Creams</button>
+    <button onclick="filterSelection('supplement', this)" class="filter-btn px-4 py-2 bg-slate-200 text-slate-800 rounded-lg font-bold">Supplements</button>
+</div></button>
+</div>
     </div>
 
     <div class="max-w-md mx-auto mb-8 sticky top-5 z-50">
@@ -107,69 +116,72 @@
     });
 </script>
    <div id="medicineGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/nutricollagen.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">NUTRI COLLAGEN</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/multipil.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MULTIPIL TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/multilife.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MULTILIFE TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/metadetox.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">METADETOX TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/magnesiumglycinate.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAGNESIUM GLYCINATE</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/jointind.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">JOINTIN D TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/dermazon.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMAZON TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/d3k2.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">D3 K2 HERBIOTICS</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/collagen.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">COLLAGEX COLLAGEN</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-              <div class="bg-white p-2 rounded shadow border product-card"><img src="/bonexd.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BONEX D TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-             <div class="bg-white p-2 rounded shadow border product-card"><img src="/biotinplusnf.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BIOTIN PLUS NUTRIFACTOR</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-             <div class="bg-white p-2 rounded shadow border product-card"><img src="/biotinplus.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BIOTIN PLUS HERBIOTICS</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-             <div class="bg-white p-2 rounded shadow border product-card"><img src="/vitamax.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">VITAMAX MEN</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/maxdifserum.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF SERUM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/maxdiffacewash.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF FACE WASH</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/maxdifcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/clobevateoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CLOBEVATE OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/clobevatecream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CLOBEVATE CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/dermovatennoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE NN OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/dermovateoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/dermovatecream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/betnovatenoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BETNOVATE N OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/betnovatencream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BETNOVATE N CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/tracnesancream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">TRACNESAN CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/sanclearcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">SANCLEAR CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/hydrylinsugarfreesyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN SF SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/hydrylindmsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN DM SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/hydrylinsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/pulmonolsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PULMONOL SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/nims100mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">NIMS 100MG TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/wintogeno50gcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">WINTOGENO 50G</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/caccock20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC COCK 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/cacmango20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC MANGO 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/cacorange20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC ORANGE 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/caclemon20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC LEMON 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/caccock10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC COCK 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/cacmango10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC MANGO 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/cacorange10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC ORANGE 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/caclemon10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC LEMON 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentin312mgsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 312MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentin156mgsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 156MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentinbdsyp457mg.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 457MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentin1000mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 1000MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentin625mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 625MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/augmentin375mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 375MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/dicloran.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DICLORAN 50MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/panadolextra.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PANADOL EXTRA</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/calpol.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CALPOL TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/brufensyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BRUFEN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/ponstantab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PONSTAN TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/risek20mgcap.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">RISEK 20MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/Gavisconsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">GAVISCON SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/mucainsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MUCAIN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/gravinatesyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">GRAVINATE SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/flagylsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">FLAGYL SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/rigixsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">RIGIX SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/softintab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">SOFTIN TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/telfast.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">TELFAST 120MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/arinacsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">ARINAC SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/pyodinesolution.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PYODINE 60ML</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/polyfax.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">POLYFAX OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/quenchcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">QUENCH PLUS</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
-            <div class="bg-white p-2 rounded shadow border product-card"><img src="medcine images/surbexz.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">SURBEX Z TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+              <div class="bg-white p-2 rounded shadow border product-card" data-category="supplement">
+    <img src="medcine images/nutricollagen.jpg" class="h-32 object-contain mx-auto">
+    <h3 class="text-xs font-bold text-center mt-2">NUTRI COLLAGEN</h3>
+    <a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a>
+</div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/multipil.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MULTIPIL TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/multilife.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MULTILIFE TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/metadetox.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">METADETOX TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/magnesiumglycinate.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAGNESIUM GLYCINATE</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/jointind.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">JOINTIN D TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/dermazon.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMAZON TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/d3k2.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">D3 K2 HERBIOTICS</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/collagen.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">COLLAGEX COLLAGEN</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/bonexd.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BONEX D TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/biotinplusnf.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BIOTIN PLUS NUTRIFACTOR</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/biotinplus.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BIOTIN PLUS HERBIOTICS</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/vitamax.jpg" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">VITAMAX MEN</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/maxdifserum.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF SERUM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/maxdiffacewash.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF FACE WASH</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/maxdifcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MAXDIF CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/clobevateoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CLOBEVATE OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/clobevatecream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CLOBEVATE CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/dermovatennoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE NN OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/dermovateoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/dermovatecream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DERMOVATE CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/betnovatenoint.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BETNOVATE N OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/betnovatencream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BETNOVATE N CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/tracnesancream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">TRACNESAN CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/sanclearcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">SANCLEAR CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/hydrylinsugarfreesyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN SF SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/hydrylindmsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN DM SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/hydrylinsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">HYDRYLIN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/pulmonolsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PULMONOL SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/nims100mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">NIMS 100MG TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/wintogeno50gcream.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">WINTOGENO 50G</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/caccock20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC COCK 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/cacmango20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC MANGO 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/cacorange20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC ORANGE 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/caclemon20s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC LEMON 20s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/caccock10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC COCK 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/cacmango10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC MANGO 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/cacorange10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC ORANGE 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="supplement"><img src="medcine images/caclemon10s.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CAC LEMON 10s</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/augmentin312mgsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 312MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/augmentin156mgsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 156MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/augmentinbdsyp457mg.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 457MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/augmentin1000mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 1000MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/augmentin625mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 625MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/augmentin375mgtab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">AUGMENTIN 375MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/dicloran.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">DICLORAN 50MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/panadolextra.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PANADOL EXTRA</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/calpol.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">CALPOL TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/brufensyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">BRUFEN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/ponstantab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PONSTAN TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/risek20mgcap.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">RISEK 20MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/Gavisconsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">GAVISCON SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/mucainsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">MUCAIN SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/gravinatesyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">GRAVINATE SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/flagylsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">FLAGYL SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/rigixsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">RIGIX SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/softintab.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">SOFTIN TAB</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="tablet"><img src="medcine images/telfast.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">TELFAST 120MG</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="syrup"><img src="medcine images/arinacsyp.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">ARINAC SYP</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/pyodinesolution.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">PYODINE 60ML</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/polyfax.png" class="h-32 object-contain mx-auto"><h3 class="text-xs font-bold text-center mt-2">POLYFAX OINT</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
+<div class="bg-white p-2 rounded shadow border product-card" data-category="cream"><img src="medcine images/quenchcream.png" class="h-32 object-contain mx-auto"><h3 class="text--xs font-bold text-center mt-2">QUENCH CREAM</h3><a href="https://wa.me/923035769978" class="block bg-green-600 text-white text-center py-1 mt-2 rounded">Order</a></div>
 
         </div> </section>
 
@@ -202,31 +214,85 @@
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-gray-400 py-6 text-center text-sm border-t border-slate-800">
-        <p>© 2026 Zubair Pharmacy. All Rights Reserved | Designed with Trust & Care</p>
-    </footer>
+   
 
-    <script>
-        function searchMedicine() {
-            let input = document.getElementById('medicineSearch').value.toLowerCase();
-            let cards = document.getElementsByClassName('product-card');
-            
-            for (let i = 0; i < cards.length; i++) {
-                let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                if (title.includes(input)) {
-                    cards[i].style.display = "";
-                } else {
-                    cards[i].style.display = "none";
-                }
-            }
-        }
-    </script><scrip
+    <script>function filterSelection(c) {
+ var btns = document.getElementsByClassName("filter-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].classList.remove("bg-teal-600", "text-white");
+    btns[i].classList.add("bg-slate-200", "text-slate-800");
+  }
+ event.target.classList.add("bg-teal-600", "text-white");
+  event.target.classList.remove("bg-slate-200", "text-slate-800");
+
+
+  var x = document.getElementsByClassName("product-card");
+  for (var i = 0; i < x.length; i++) {
+    if (c == "all" || x[i].getAttribute("data-category") == c) {
+      x[i].style.display = "block";
+    } else {
+      x[i].style.display = "none";
+    }
+  }
+}
+       
+             </script><scrip
 t src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
   const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: { delay: 3000, disableOnInteraction: false },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   });
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("product-card");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    if (x[i].getAttribute("data-category").indexOf(c) > -1) {
+       x[i].style.display = "block";
+    } else {
+       x[i].style.display = "none";
+    }
+  }
+}
 </script>
+
 </body>
+<div class="w-full mt-16">
+<footer class="bg-slate-900 text-white py-12 mt-16 w-full">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+            
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-xl font-bold text-teal-400 mb-3">Zubair Pharmacy</h3>
+                <p class="text-slate-400 text-sm">Kahna Kacha Road, Lahore.</p>
+                <a href="https://share.google/5UdsyQBEPRJCshzdC" target="_blank" class="inline-flex items-center gap-2 mt-3 text-teal-500 font-bold hover:underline">
+                    <i class="fas fa-map-marker-alt"></i> Location Dekhein (Maps)
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-lg font-bold mb-3">Quick Links</h3>
+                <ul class="text-slate-400 space-y-2">
+                    <li><a href="#home" class="hover:text-teal-400">Home</a></li>
+                    <li><a href="#products" class="hover:text-teal-400">Medicines</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-lg font-bold mb-3">Contact Us</h3>
+                <p class="text-slate-400 text-sm">WhatsApp:</p>
+                <p class="font-bold text-white text-lg mb-3">0303-5769978</p>
+                <a href="https://wa.me/923035769978" target="_blank" class="inline-block bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-full font-bold transition shadow-md">
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 mt-10 pt-6 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 Zubair Pharmacy. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer></div>
+
 </html>
