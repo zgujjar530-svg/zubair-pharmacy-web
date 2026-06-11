@@ -111,7 +111,7 @@
         fadeEffect: { crossFade: true }
     });
 </script>
-  <div id="medicineGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+ <div id="medicineGrid" class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
     <div class="bg-white p-2 rounded shadow border product-card" data-category="supplement">
         <img src="medcine images/nutricollagen.jpg" class="h-32 object-contain mx-auto">
         <h3 class="text-xs font-bold text-center mt-2">NUTRI COLLAGEN</h3>
@@ -211,6 +211,22 @@ function addToCart(name) {
     cart.forEach(item => {
         list.innerHTML += `<li>${item}</li>`;
     });
+}
+function searchMedicine() {
+    let input = document.getElementById('medicineSearch').value.toLowerCase();
+    let grid = document.getElementById('medicineGrid');
+    let cards = grid.getElementsByClassName('product-card');
+
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+        
+        // Agar naam match ho jaye to show, warna hide
+        if (title.indexOf(input) > -1) {
+            cards[i].style.display = ""; 
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
 }
 
 function sendOrder() {
