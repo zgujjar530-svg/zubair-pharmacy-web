@@ -87,24 +87,20 @@
         </div>
     </div>
 
-    <div class="swiper main-slider w-full h-[200px] md:h-[400px] rounded-2xl shadow-xl overflow-hidden mb-10">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide relative">
-                <img src="banner1.jpg" class="w-full h-full object-cover">
-            </div>
-            <div class="swiper-slide relative">
-                <img src="banner2.jpg" class="w-full h-full object-cover">
-            </div>
-            <div class="swiper-slide relative">
-                <img src="banner3.jpg" class="w-full h-full object-cover">
-            </div>
+    
         </div>
-        <div class="swiper-pagination"></div>
+      <div class="swiper main-slider w-full h-[200px] md:h-[400px] rounded-2xl shadow-xl overflow-hidden mb-10">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="banner1.jpg" class="w-full h-full object-cover"></div>
+        <div class="swiper-slide"><img src="banner2.jpg" class="w-full h-full object-cover"></div>
+        <div class="swiper-slide"><img src="banner3.jpg" class="w-full h-full object-cover"></div>
     </div>
+    <div class="swiper-pagination"></div>
+</div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>n
+<script>
     const swiper = new Swiper('.main-slider', {
         loop: true,
         autoplay: { delay: 3000, disableOnInteraction: false },
@@ -305,13 +301,7 @@ function filterSelection(c) {
   }
 }
        
-             </script><scrip
-t src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: { delay: 3000, disableOnInteraction: false },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-  });
+             </script>
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("product-card");
@@ -324,7 +314,23 @@ function filterSelection(c) {
     }
   }
 }
-</script><div id="cart-section" class="fixed bottom-4 right-4 bg-white p-4 shadow-2xl border border-teal-200 rounded-xl z-50 hidden max-w-[250px]">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.main-slider', {
+        loop: true,
+        autoplay: { 
+            delay: 3000, 
+            disableOnInteraction: false 
+        },
+        pagination: { 
+            el: '.swiper-pagination', 
+            clickable: true 
+        },
+        effect: 'fade',
+        fadeEffect: { crossFade: true }
+    });
+</script>
+<div id="cart-section" class="fixed bottom-4 right-4 bg-white p-4 shadow-2xl border border-teal-200 rounded-xl z-50 hidden max-w-[250px]">
     <div class="flex justify-between items-center mb-2">
         <h3 class="font-bold text-teal-800">My Requests</h3>
         <button onclick="document.getElementById('cart-section').classList.add('hidden')" class="text-gray-400">✕</button>
